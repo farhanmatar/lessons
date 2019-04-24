@@ -1,0 +1,20 @@
+.div1{
+    width: 300px;
+    height: 100px;
+    background-color: rgb(255, 38, 0);
+    border: 1px solid black;
+}
+.div2{
+    width: 300px;
+    height: 100px;
+    background-color: yellow;
+    border: 1px solid black;
+    transform: skew(10deg,20deg)
+}
+.div3{
+    width: 300px;
+    height: 100px;
+    background-color: rgb(30, 255, 0);
+    border: 1px solid black;
+    transform: matrix(20deg,30deg)
+}

@@ -1,0 +1,46 @@
+body{
+    background-color: goldenrod;
+}
+ul {
+    list-style: none;
+}
+a{
+    text-decoration: none;
+}
+.nav{
+    display: inline-block;
+}
+.nav > ul > li{
+    display: inline-block;
+    float: left;
+   
+    padding:1em;
+
+}
+li{
+    background-color:yellowgreen;
+    border-radius: 44%;
+}
+.dropdown{
+    position: absolute;
+    top: 70px;
+    left: 100px;
+    opacity:0;
+    transition: 1s;
+}
+.ss:hover .dropdown{
+   
+    opacity:1;
+    transition: 1s;
+}
+.content li{
+    padding: 10px
+
+}
+li:hover .content{
+    display: block;
+}
+li:hover{
+    background: orange;
+}
+    

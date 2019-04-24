@@ -1,0 +1,75 @@
+
+
+.row{
+    position: relative;
+    border-radius: 50%;
+    border: 1px solid black;
+    height: 400px;
+    width: 400px;
+    background-color:orange;
+    margin:0 auto;
+    top: 0px;
+    left: 0px;
+   
+   
+
+}
+
+.cell_a{
+    position: absolute;
+    border-radius: 50%;
+    border: 1px solid black;
+    height: 300px;
+    width: 300px;
+    background-color: aqua;
+    top: 50px;
+    left: 50px;
+   
+    
+}
+.cell_b{
+    position: absolute;
+    border-radius: 50%;
+    border: 1px solid black;
+    height: 200px;
+    width: 200px;
+    background-color: red;
+    top: 100px;
+    left: 100px;
+   
+/* }
+ .cell_c{
+    position:absolute;
+    border-radius: 50%;
+    border: 1px solid black;
+    height: 500px;
+    width: 500px;
+    background-color:green;
+    top: 50px;
+    left: 50px;
+}
+.cell_d{
+    position:absolute;
+    border-radius: 50%;
+    border: 1px solid black;
+    height: 400px;
+    width: 400px;
+    background-color: blueviolet;
+    top: 25px;
+    left: 25px;
+
+
+}
+.cell_e{
+    position:absolute;
+    border-radius: 50%;
+    border: 1px solid black;
+    height: 300px;
+    width: 300px;
+    background-color: yellow;
+    top: 0px;
+    left: 0px;
+
+}  */
+
+
