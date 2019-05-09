@@ -1,0 +1,38 @@
+body{
+    font-size: 2em;   
+}
+@font-face{
+    src: url(/CSS-font/apercu-black-pro.woff2);
+    font-family: my-new-font;
+    
+}
+@font-face{
+     src: url(/CSS-font/fonts/Anton-Regular.ttf);
+     font-family: my-new;
+}
+@font-face{
+    src: url(/CSS-font/lato-heavy-webfont.woff2);
+    font-family: my;
+}
+.variant{
+    font-variant: small-caps;
+    text-transform: uppercase;
+    font-weight: bolder;
+}
+.font-italic{
+    font-family: my-new;
+    font-style: italic;
+}
+.my-font{
+    font-family: my-new-font;
+}
+.google-font{
+    font-family: 'Anton', sans-serif;
+}
+.font-google{
+    font-family: 'Black And White Picture', sans-serif;
+}
+.mahdia{
+    font-family: my;
+
+}

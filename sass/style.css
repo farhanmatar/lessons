@@ -1,0 +1,26 @@
+nav {
+  border: 1px soild black;
+}
+
+nav ul {
+  background: greenyellow;
+  margin: 0;
+  padding: 0;
+}
+
+nav ul li {
+  display: inline-block;
+}
+
+nav ul li a {
+  text-decoration: none;
+}
+
+nav ul li a:visited {
+  color: #ff1100;
+}
+
+nav ul {
+  list-style: none;
+}
+/*# sourceMappingURL=style.css.map */

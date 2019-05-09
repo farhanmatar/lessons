@@ -1,0 +1,87 @@
+header {
+  text-align: center;
+  padding: 20px;
+}
+
+body {
+  padding: 18px;
+}
+
+h1 {
+  text-align: center;
+  padding: 40px;
+}
+
+nav {
+  display: flexbox;
+}
+
+nav ul {
+  text-align: center;
+  list-style-type: none;
+}
+
+nav li {
+  margin: auto 0;
+  display: inline-block;
+  padding: 40px;
+  text-align: center;
+}
+
+.cards {
+  display: flexbox;
+  text-align: center;
+}
+
+.cards .card {
+  width: 29vw;
+  display: inline-block;
+  text-align: center;
+  font-size: 1em;
+}
+
+.portion {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: left;
+      -ms-flex-align: left;
+          align-items: left;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.portion img {
+  width: 25vw;
+}
+
+aside, section {
+  padding: 30px;
+}
+
+footer {
+  display: flexbox;
+}
+
+footer ul {
+  text-align: center;
+}
+
+footer li {
+  text-align: center;
+  margin: auto 0;
+  display: inline-block;
+  padding: 40px;
+  text-align: center;
+}
+
+@media screen and (max-width: 400px) {
+  nav, a {
+    width: 100%;
+  }
+  .portion, .aside, .section, .card {
+    width: 100%;
+  }
+}
+/*# sourceMappingURL=exe2.css.map */

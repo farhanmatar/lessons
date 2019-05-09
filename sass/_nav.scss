@@ -1,0 +1,17 @@
+nav{
+    ul{
+        text-align: $tac;
+        list-style-type:$none;
+        li{
+            display:$dib;
+            a{
+                text-decoration: $none;
+                padding: 16px;
+                font-size: 1em;
+                font-weight: 700;
+                font-family:$fofa1;
+            }
+        }
+
+    }
+}

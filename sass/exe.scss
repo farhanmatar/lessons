@@ -1,0 +1,59 @@
+$main-font:Arial, Helvetica, sans-serif;
+$tnr: 'Times New Roman', Times, serif;
+$co:blue;
+$f-f-f: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+$co-p:purple;
+$f-s3: 3rem;
+$fgtnr:Georgia, 'Times New Roman', Times, serif;
+$C-G:green;
+$rm2:2rem;
+$r10:10rem;
+$bgc:rgba(255, 255, 0, 0.39);
+$tac:center;
+
+//nesting
+
+
+header {
+    height:$r10;
+    background-color:$bgc;
+    text-align: $tac;
+    padding-top: $rm2;
+    font-family: $main-font;
+}
+main{
+    .huge{
+        color:$co;
+        font-family: $tnr;
+    }
+    .big{
+        font-family: $tnr;
+        color: $co;
+    }
+    .medium{
+        font-display: $fgtnr;
+        color: $co-p;
+        font-size: $f-s3;
+    }
+    .middle {
+        font-family: $tnr;
+        font-size: $f-s3;
+        color: $co-p;
+    }
+    .small{
+        font-family: $f-f-f;
+        color: $C-G;
+        font-size:$rm2;
+    }
+    .tiny{
+        font-family: $f-f-f;
+        color: $C-G;
+        margin-bottom: $rm2;
+    }
+
+}
+footer{
+    height: $r10;
+    background-color: $bgc;
+    font-family: $main-font;
+}
