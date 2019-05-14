@@ -4,8 +4,7 @@
 }
 
 body {
-  background: #ff9999;
-  /* FF3.6-15 */
+  background: -moz-linear-gradient(left, #8f8f8f 0%, #a6a6a6 15%, #bfbfbf 25%, #858585 39%, black 51%, #212121 60%, #525252 70%, #852c3b 88%, #363636 91%, #212121 100%);
   font-family: 'Lobster', cursive;
   font-size: 1.4em;
 }
@@ -30,6 +29,18 @@ nav ul li a {
   font-size: 1em;
   font-weight: 700;
   font-family: "Sofia", cursive;
+  -webkit-transition: ease-in-out 600ms;
+  transition: ease-in-out 600ms;
+}
+
+nav ul li a:hover {
+  font-size: 1.4em;
+  color: aqua;
+  background-color: white;
+  color: rgba(226, 223, 20, 0.849);
+  padding: 10px;
+  border: 2px solid #444;
+  border-radius: 25px;
 }
 
 .cards {
@@ -98,5 +109,13 @@ footer ul li a {
 
 header, footer {
   color: #e6dcdc;
+}
+
+footer:hover {
+  background-color: white;
+  color: rgba(226, 223, 20, 0.849);
+  padding: 10px;
+  border: 2px solid #444;
+  border-radius: 25px;
 }
 /*# sourceMappingURL=mansour.css.map */

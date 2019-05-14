@@ -10,6 +10,13 @@ nav{
                 font-size: 1em;
                 font-weight: 700;
                 font-family:$fofa1;
+               
+                transition: ease-in-out 600ms;
+            }
+            a:hover{
+                font-size: 1.4em;
+                color:  aqua ;
+                @include hover-effect;
             }
         }
 

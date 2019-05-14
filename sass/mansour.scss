@@ -1,20 +1,28 @@
 $maincolor:#444;
 $tac:center;
 $dib:inline-block;
-$bacgr1:-moz-linear-gradient(top, #e49a46 0%, #d8e529 29%, #bce0ee 100%);
-$bacgr2:-moz-linear-gradient(top, #b5bdc8 0%, #b6413dec 36%, #ce54330b 100%);
+
+// $bacgr1:-moz-linear-gradient(top, #e49a46 0%, #d8e529 29%, #bce0ee 100%);
+// $bacgr2:-moz-linear-gradient(button, #b5bdc8 0%, #b6413dec 36%, #ce54330b 100%);
 $p2px :20px;
 $taj:justify;
 $none:none;
 $disfl:flex;
 $fofa1:'Sofia', cursive;
-
+@mixin hover-effect {
+    background-color: white;
+    color: rgba(226, 223, 20, 0.849);
+    padding: 10px;
+    border: 2px solid #444;
+    border-radius: 25px;
+    
+}
 
 
 
 *{box-sizing:border-box;}
 body{
-    background:lighten( red,30%); /* FF3.6-15 */
+    background: -moz-linear-gradient(left, rgba(143,143,143,1) 0%, rgba(166,166,166,1) 15%, rgba(191,191,191,1) 25%, rgba(133,133,133,1) 39%, rgba(0,0,0,1) 51%, rgba(33,33,33,1) 60%, rgba(82,82,82,1) 70%, rgba(133,44,59,1) 88%, rgba(54,54,54,1) 91%, rgba(33,33,33,1) 100%);
     // background: $bacgr2; /* FF3.6-15 */
     font-family: 'Lobster', cursive;
     font-size:1.4em;
@@ -38,11 +46,13 @@ header{
         padding: $p2px;
         margin: $p2px;
         box-shadow: 9px 6px 19px 7px #444;
+      
 
     }
 }
 
 .portion{
+  
     display:$disfl;
     align-items: $tac;
         img{
@@ -81,4 +91,8 @@ footer{
 
 header,footer{
     color:rgb(230, 220, 220);  
+    
+}
+footer:hover{
+    @include hover-effect;
 }

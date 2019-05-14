@@ -1,0 +1,170 @@
+@mixin text-format($text-color, $align, $font-family, $font-size) {
+  color: $text-color;
+  text-align: $align;
+  font-display: $font-family;
+  font-size: $font-size;
+}
+//      animation          // 
+
+@mixin my-animation {
+    @keyframes fly{
+        0%{ background-color: white;left:0px; top:0px; border-radius: 0 0 0 0;}
+        25%{ background-color:red;left:300px; top:0px;}
+        50%{ background-color:rgb(81, 255, 0); left:300px; top: 300px;}
+        75%{ background-color:rgb(0, 162, 255); left:0px; top:300px;}
+        100%{ background-color:white; left:0; top:0px;}
+        // from{ color: yellow;}
+        // to{ color: red;}
+        
+    }
+    
+    animation-name: fly;
+    animation-duration: 2s;
+    animation-delay: 0.5s;
+    animation-iteration-count: infinite;
+    
+}
+
+
+@mixin link-format {
+  transition: ease-in-out 400ms;
+  text-transform: uppercase;
+  &:hover {
+    background-color: aqua;
+    font-weight: bold;
+    transform: scale(1.1);
+  }
+  &:active {
+    background-color: yellowgreen;
+  }
+}
+
+%light-text {
+  border: 1px solid yellow;
+  background: linear-gradient(
+    to left,
+    rgba(0, 255, 106, 0.767),
+    green,
+    rgba(199, 144, 42, 0.733),
+    yellow
+  );
+  color: rgb(17, 16, 16);
+  font-weight: bold;
+  font-size: 1.7em;
+  text-align: center;
+  border-radius: 40px;
+}
+.text {
+  @extend %light-text;
+}
+.light {
+  @extend %light-text;
+}
+
+* {
+  box-sizing: border-box;
+}
+header {
+  text-align: center;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  padding: 20px;
+  // text-transform: uppercase;
+
+  h1 {
+    @include my-animation();
+    color: lighten(darkblue, 40%);
+  }
+  h2 {
+    color: darken(lightgray, 30%);
+    @include my-animation();
+  }
+}
+
+.nav {
+  .nav-links {
+    display: flex;
+    justify-content: center;
+    background-color: rgba(0, 0, 255, 0.5);
+
+    li {
+      @include link-format();
+      list-style: none;
+      padding: 10px;
+      list-style-type: none;
+      a {
+        text-decoration: none;
+        color: #fff;
+        font-family: "Lobster", cursive;
+        font-size: 1.5em;
+      }
+    }
+  }
+}
+.text-section {
+  h3 {
+    text-align: center;
+  }
+
+  p {
+    @include my-animation();
+    @include text-format(blue, center, " 'Gugi', cursive", 1.7em);
+    text-align: justify;
+    font-size: 1.7em;
+    font-family: "Gugi", cursive;
+    color: #333;
+  }
+}
+
+.section-images {
+  display: flex;
+  flex-flow: row;
+  justify-content: center;
+  align-items: center;
+
+  img {
+    height: 200px;
+    width: 250px;
+    margin: 0px 5px 0px 5px;
+  }
+}
+
+footer {
+  height: 150px;
+  background-color: rgba(0, 0, 255, 0.5);
+  .footer-links {
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+
+    li {
+      @include link-format();
+      list-style: none;
+    }
+    a {
+      padding: 20px;
+      font-size: 1.5em;
+      font-family: "Lobster", cursive;
+      text-decoration: none;
+      color: #fff;
+    }
+  }
+}
+@media screen and (max-width: 600px) {
+  .nav-links {
+    display: flex;
+    flex-direction: column;
+    li {
+      text-align: center;
+    }
+  }
+  .section-images {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .footer-links {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+  }
+}

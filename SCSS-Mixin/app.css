@@ -1,0 +1,319 @@
+.text, .light {
+  border: 1px solid yellow;
+  background: -webkit-gradient(linear, right top, left top, from(rgba(0, 255, 106, 0.767)), color-stop(green), color-stop(rgba(199, 144, 42, 0.733)), to(yellow));
+  background: linear-gradient(to left, rgba(0, 255, 106, 0.767), green, rgba(199, 144, 42, 0.733), yellow);
+  color: #111010;
+  font-weight: bold;
+  font-size: 1.7em;
+  text-align: center;
+  border-radius: 40px;
+}
+
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+header {
+  text-align: center;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  padding: 20px;
+}
+
+header h1 {
+  -webkit-animation-name: fly;
+          animation-name: fly;
+  -webkit-animation-duration: 2s;
+          animation-duration: 2s;
+  -webkit-animation-delay: 0.5s;
+          animation-delay: 0.5s;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
+  color: #5858ff;
+}
+
+@-webkit-keyframes fly {
+  0% {
+    background-color: white;
+    left: 0px;
+    top: 0px;
+    border-radius: 0 0 0 0;
+  }
+  25% {
+    background-color: red;
+    left: 300px;
+    top: 0px;
+  }
+  50% {
+    background-color: #51ff00;
+    left: 300px;
+    top: 300px;
+  }
+  75% {
+    background-color: #00a2ff;
+    left: 0px;
+    top: 300px;
+  }
+  100% {
+    background-color: white;
+    left: 0;
+    top: 0px;
+  }
+}
+
+@keyframes fly {
+  0% {
+    background-color: white;
+    left: 0px;
+    top: 0px;
+    border-radius: 0 0 0 0;
+  }
+  25% {
+    background-color: red;
+    left: 300px;
+    top: 0px;
+  }
+  50% {
+    background-color: #51ff00;
+    left: 300px;
+    top: 300px;
+  }
+  75% {
+    background-color: #00a2ff;
+    left: 0px;
+    top: 300px;
+  }
+  100% {
+    background-color: white;
+    left: 0;
+    top: 0px;
+  }
+}
+
+header h2 {
+  color: #878787;
+  -webkit-animation-name: fly;
+          animation-name: fly;
+  -webkit-animation-duration: 2s;
+          animation-duration: 2s;
+  -webkit-animation-delay: 0.5s;
+          animation-delay: 0.5s;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
+}
+
+@keyframes fly {
+  0% {
+    background-color: white;
+    left: 0px;
+    top: 0px;
+    border-radius: 0 0 0 0;
+  }
+  25% {
+    background-color: red;
+    left: 300px;
+    top: 0px;
+  }
+  50% {
+    background-color: #51ff00;
+    left: 300px;
+    top: 300px;
+  }
+  75% {
+    background-color: #00a2ff;
+    left: 0px;
+    top: 300px;
+  }
+  100% {
+    background-color: white;
+    left: 0;
+    top: 0px;
+  }
+}
+
+.nav .nav-links {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  background-color: rgba(0, 0, 255, 0.5);
+}
+
+.nav .nav-links li {
+  -webkit-transition: ease-in-out 400ms;
+  transition: ease-in-out 400ms;
+  text-transform: uppercase;
+  list-style: none;
+  padding: 10px;
+  list-style-type: none;
+}
+
+.nav .nav-links li:hover {
+  background-color: aqua;
+  font-weight: bold;
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+}
+
+.nav .nav-links li:active {
+  background-color: yellowgreen;
+}
+
+.nav .nav-links li a {
+  text-decoration: none;
+  color: #fff;
+  font-family: "Lobster", cursive;
+  font-size: 1.5em;
+}
+
+.text-section h3 {
+  text-align: center;
+}
+
+.text-section p {
+  -webkit-animation-name: fly;
+          animation-name: fly;
+  -webkit-animation-duration: 2s;
+          animation-duration: 2s;
+  -webkit-animation-delay: 0.5s;
+          animation-delay: 0.5s;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
+  color: blue;
+  text-align: center;
+  font-display: " 'Gugi', cursive";
+  font-size: 1.7em;
+  text-align: justify;
+  font-size: 1.7em;
+  font-family: "Gugi", cursive;
+  color: #333;
+}
+
+@keyframes fly {
+  0% {
+    background-color: white;
+    left: 0px;
+    top: 0px;
+    border-radius: 0 0 0 0;
+  }
+  25% {
+    background-color: red;
+    left: 300px;
+    top: 0px;
+  }
+  50% {
+    background-color: #51ff00;
+    left: 300px;
+    top: 300px;
+  }
+  75% {
+    background-color: #00a2ff;
+    left: 0px;
+    top: 300px;
+  }
+  100% {
+    background-color: white;
+    left: 0;
+    top: 0px;
+  }
+}
+
+.section-images {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row;
+          flex-flow: row;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.section-images img {
+  height: 200px;
+  width: 250px;
+  margin: 0px 5px 0px 5px;
+}
+
+footer {
+  height: 150px;
+  background-color: rgba(0, 0, 255, 0.5);
+}
+
+footer .footer-links {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding: 20px;
+}
+
+footer .footer-links li {
+  -webkit-transition: ease-in-out 400ms;
+  transition: ease-in-out 400ms;
+  text-transform: uppercase;
+  list-style: none;
+}
+
+footer .footer-links li:hover {
+  background-color: aqua;
+  font-weight: bold;
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+}
+
+footer .footer-links li:active {
+  background-color: yellowgreen;
+}
+
+footer .footer-links a {
+  padding: 20px;
+  font-size: 1.5em;
+  font-family: "Lobster", cursive;
+  text-decoration: none;
+  color: #fff;
+}
+
+@media screen and (max-width: 600px) {
+  .nav-links {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .nav-links li {
+    text-align: center;
+  }
+  .section-images {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .footer-links {
+    text-align: center;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+}
+/*# sourceMappingURL=app.css.map */
