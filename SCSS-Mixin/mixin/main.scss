@@ -1,0 +1,47 @@
+@mixin styler {
+  text-align: center;
+  font-size: 2em;
+  text-transform: uppercase;
+}
+
+.title {
+  @include styler();
+  color: red;
+}
+.text {
+  @include styler();
+  color: blue;
+}
+////////////////////////////
+@mixin mystyler($color, $fsize, $rudios) {
+  text-transform: uppercase;
+  color: $color;
+  font-size: $fsize;
+  border-radius: $rudios;
+  border: 2px solid black;
+}
+@mixin bgcolor($diraction, $stcolor, $ndcolor, $rdcolor) {
+  background-image: linear-gradient($diraction, $stcolor, $ndcolor, $rdcolor);
+}
+@mixin super-styler($color, $fsize, $selector) {
+  #{$selector} {
+    background-color: $color;
+    font-size: $fsize;
+
+    &:hover {
+      background-color: lighten($color, 20%);
+    }
+  }
+}
+
+.htext {
+  @include bgcolor(to right, green, yellow, black);
+  @include mystyler(green, 2em, 10px);
+  text-align: center;
+}
+.content {
+  @include bgcolor(to right, green, rgb(0, 4, 255), red);
+  text-align: left;
+  @include mystyler(orange, 1.9em, 20px);
+}
+@include super-styler(red, 2.2em, ".light-text");

@@ -1,0 +1,117 @@
+.ball1 {
+  width: 200px;
+  height: 200px;
+  border-radius: 100%;
+  -webkit-animation-name: my-ani;
+          animation-name: my-ani;
+  -webkit-animation-duration: 2s;
+          animation-duration: 2s;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
+  -webkit-animation-delay: 2s;
+          animation-delay: 2s;
+  border: 2px solid black;
+  background-color: blueviolet;
+  position: relative;
+}
+
+@-webkit-keyframes my-ani {
+  0% {
+    background-color: white;
+    left: 0px;
+    top: 0px;
+    border-radius: 0 0 0 0;
+  }
+  25% {
+    background-color: red;
+    left: 300px;
+    top: 0px;
+    border-radius: 50% 0 0 0;
+  }
+  50% {
+    background-color: green;
+    left: 300px;
+    top: 300px;
+    border-radius: 50% 50% 0 0;
+  }
+  75% {
+    background-color: aqua;
+    left: 0px;
+    top: 300px;
+    border-radius: 50% 50% 50% 0;
+  }
+  100% {
+    background-color: white;
+    left: 0;
+    top: 0px;
+    border-radius: 50% 50% 50% 50%;
+  }
+}
+
+@keyframes my-ani {
+  0% {
+    background-color: white;
+    left: 0px;
+    top: 0px;
+    border-radius: 0 0 0 0;
+  }
+  25% {
+    background-color: red;
+    left: 300px;
+    top: 0px;
+    border-radius: 50% 0 0 0;
+  }
+  50% {
+    background-color: green;
+    left: 300px;
+    top: 300px;
+    border-radius: 50% 50% 0 0;
+  }
+  75% {
+    background-color: aqua;
+    left: 0px;
+    top: 300px;
+    border-radius: 50% 50% 50% 0;
+  }
+  100% {
+    background-color: white;
+    left: 0;
+    top: 0px;
+    border-radius: 50% 50% 50% 50%;
+  }
+}
+
+.ball2 {
+  width: 200px;
+  height: 200px;
+  border-radius: 100%;
+  -webkit-animation-name: my-ani;
+          animation-name: my-ani;
+  -webkit-animation-duration: 4s;
+          animation-duration: 4s;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
+  -webkit-animation-delay: 4s;
+          animation-delay: 4s;
+  border: 2px solid black;
+  background-color: blueviolet;
+  position: relative;
+}
+
+.ball3 {
+  width: 200px;
+  height: 200px;
+  border-radius: 100%;
+  -webkit-animation-name: my-ani;
+          animation-name: my-ani;
+  -webkit-animation-duration: 6s;
+          animation-duration: 6s;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
+  -webkit-animation-delay: 6s;
+          animation-delay: 6s;
+  border: 2px solid black;
+  background-color: blueviolet;
+  position: relative;
+}
+/*# sourceMappingURL=EX.css.map */

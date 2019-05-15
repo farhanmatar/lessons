@@ -1,0 +1,39 @@
+@mixin hool ($width,$hight,$Bradius,$delay,$speed){ 
+    width:$width;
+    height:$hight ;
+    border-radius:$Bradius ;
+    animation-name: my-ani;
+    animation-duration: $speed;
+    animation-iteration-count: infinite;
+    animation-delay: $delay;
+}
+
+ 
+.ball1{
+    @include hool(200px,200px ,100%,2s ,2s);
+    border: 2px solid black;
+    background-color: blueviolet;
+    position: relative;
+}
+  
+    
+@keyframes my-ani{
+            0%{ background-color: white;left:0px; top:0px; border-radius: 0 0 0 0;}
+            25%{ background-color:red;left:300px; top:0px; border-radius: 50% 0 0 0;}
+            50%{ background-color:green; left:300px; top: 300px; border-radius: 50% 50% 0 0;}
+            75%{ background-color:aqua; left:0px; top:300px; border-radius: 50% 50% 50% 0;}
+            100%{ background-color:white; left:0; top:0px; border-radius:50% 50% 50% 50%;}
+  
+}
+.ball2{
+    @include hool(200px,200px ,100% ,3s,3s);
+    border: 2px solid black;
+    background-color: blueviolet;
+    position: relative;
+}
+.ball3{
+    @include hool(200px,200px ,100%,1s ,1s);
+    border: 2px solid black;
+    background-color: blueviolet;
+    position: relative;
+}
