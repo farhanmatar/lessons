@@ -1,0 +1,18 @@
+.arrow-up {
+  width: 0;
+  height: 0;
+  margin: 10px;
+  border-left: 50px solid transparent;
+  border-right: 50px solid transparent;
+  border-bottom: 50px solid red;
+}
+
+.arrow-down {
+  width: 0;
+  height: 0;
+  margin: 10px;
+  border-left: 50px solid transparent;
+  border-right: 50px solid transparent;
+  border-top: 50px solid yellow;
+}
+/*# sourceMappingURL=ex.css.map */

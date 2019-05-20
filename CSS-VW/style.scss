@@ -1,0 +1,210 @@
+// *{
+//     box-sizing: border-box;
+//     margin: 0;
+// }
+// body{
+//     padding: 20px;
+//     font-family: 'Lato', sans-serif;
+//     line-height: 1.7;
+
+// }
+// .main{
+//     background-color: red;
+//     width: 300px;
+//     height: 600px;
+//     border: 1px soild black;
+//     margin: 0;
+//     overflow: hidden;
+// }
+// .article{
+//     width: 100wv;
+//     height: 300px;
+//     border: 1px soild black;
+//     margin: 0;
+
+// }
+// .button{
+
+//     color: blue;
+//     background: aqua;
+
+// }
+// button{
+//     background: aqua;
+//     padding: 15px;
+//     color: red;
+//     font-size: 1.5em;
+//     margin: 20px;
+
+// }
+// p{
+//     background: #ccc;
+//     font-size: 2em;
+//     color: #333;
+//     font-weight: bold;
+// }
+// #par{
+//     all: unset;
+// }
+// .header{
+//     clip-path: polygon(0 0, 100vw 0,100vw 80vh, 0 100vh);
+//     width:100vw ;
+//     height:100vh ;
+//     background-image: linear-gradient(to right bottom,rgba(126,213,115,0.5) ,rgba(40,180,133,0.8)), url(/CSS-VW/hero.jpg);
+//     background-position: top;
+//     background-size: cover;
+//     position: relative;
+//     text-align: center;
+
+// }
+// .header-text-box{
+
+//     position: absolute;
+//     top: 40%;
+//     left: 50%;
+//     transform: translate(-50%,-50%)
+
+// }
+// .logo-box img{
+//     height: 34px;
+// }
+// .first-text{
+//     font-size: 3em;
+//     color: #fff;
+//     display: block;
+//     text-transform: uppercase;
+//     letter-spacing: 20px;
+
+// }
+// .secound-text{
+//     color: #fff;
+//     display: block;
+//     text-transform: uppercase;
+//     letter-spacing: 10px;
+//     font-size: 1.5em;
+
+// }
+
+*,::after,::before {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+body {
+  font-family: "Lato", sans-serif;
+  line-height: 1.7;
+  padding: 20px;
+}
+.header {
+  width: 100vw;
+  height: 100vh;
+  background-image: linear-gradient(
+      to right bottom,
+      rgba(126, 213, 111, 0.8),
+      rgba(40, 80, 133, 0.8)
+    ),
+    url(hero.jpg);
+  background-size: cover;
+  background-position: top;
+  clip-path: polygon(0 0, 100vw 0, 100vw 74vh, 0 100vh);
+  position: relative;
+}
+.logo-box {
+  position: absolute;
+  top: 40px;
+  left: 40px;
+}
+.logo-box img {
+  height: 35px;
+}
+.header-text-box {
+  position: absolute;
+  top: 40%;
+  left: 50%;
+  text-align: center;
+  transform: translate(-50%, -50%);
+  .first-text {
+    color: #ffffff;
+    display: block;
+    text-transform: uppercase;
+    letter-spacing: 10px;
+    font-size: 4em;
+    font-weight: 400;
+    backface-visibility: hidden;
+  }
+  .second-text {
+    display: block;
+    color: #ffffff;
+    font-size: 1.5em;
+    font-weight: 700;
+    letter-spacing: 10px;
+    text-transform: uppercase;
+    backface-visibility: hidden;
+  }
+}
+.navigation-icon {
+  position: relative;
+  margin-top: 30px;
+  left: 15px;
+}
+
+.navigation-icon::after,.navigation-icon::before,.navigation-icon{
+  display: inline-block;
+  width: 30px;
+  height: 2px;
+  background-color: #333;
+  
+  
+}
+.navigation-icon::before{
+  position: absolute;
+  left: 0;
+  top: -8px;
+}
+.navigation-icon::after{
+  position: absolute;
+  left: 0;
+  top: 8px;
+}
+.navigation-icon::after,.navigation-icon::before{
+  content:'' ;
+  position: absolute;
+}
+.navigation-button:hover .navigation-icon::after{
+top: 15px;
+}
+.navigation-button:hover .navigation-icon::before{
+  top:-15px;
+}
+.navigation-checkbox:active ~ .navigation-background{
+  transform: scale(80);
+}
+.navigation-checkbox{
+  display: none;
+}
+.navigation-background {
+  height: 60px;
+  width: 60px;
+  position: fixed;
+  background-color: lightgreen;
+  z-index: 1;
+  top: 50px;
+  right:50px;
+  border-radius: 50%;
+  transition: transform 1s cubic-bezier(0.86,0,0.07,1);
+  
+
+}
+
+
+
+.navigation-button{
+    position: fixed;
+    width: 60px;
+    height: 60px;
+    background-color:yellowgreen;
+    border-radius: 50%;
+    top: 50px;
+    right: 50px;
+    z-index: 2;
+}

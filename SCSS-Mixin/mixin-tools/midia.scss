@@ -1,0 +1,194 @@
+// .header-title {
+//   font-size: 2rem;
+// }
+// @media (min-width: 300px) {
+//   .header-title {
+//     column-count: 1;
+//   }
+//   .header-title:before {
+//     content: "for-phone-only";
+//   }
+// }
+// @media (min-width: 600px) {
+//   .header-title {
+//     column-count: 2;
+//   }
+//   .header-title:before {
+//     content: "for-tablet-only";
+//   }
+// }
+// @media (min-width: 900px) {
+//     .header-title {
+//       column-count: 3;
+//     }
+//     .header-title:before {
+//       content: "for-phone-Tablet-desktop";
+//     }
+//   }
+// @media (min-width: 300px) {
+//   .header-title {
+//     column-count: 1;
+//   }
+//   &:before {
+//     content: "phone";
+//   }
+// }
+// .header-title {
+//   font-size: 2rem;
+//   @include phone();
+// }
+// ---------------------2nd way -------------------------------------//
+@mixin phone {
+  @media (max-width: 599px) {
+    & {
+      column-count: 1;
+    }
+
+    &:before {
+      content: 'PHONE';
+
+      color: orange;
+    }
+  }
+}
+
+// @mixin phone {
+//   @media (max-width: 600px) {
+//     & {
+//       column-count: 2;
+//     }
+
+//     &:before {
+//       content: 'TABLET';
+
+//       color: yellow;
+//     }
+//   }
+// }
+
+// @mixin phone {
+//   @media (min-width: 900px) {
+//     & {
+//       column-count: 3;
+//     }
+
+//     &:before {
+//       content: 'DESKTOP';
+
+//       color: pink;
+//     }
+//   }
+// }
+
+// .header-title {
+//   font-size: 2rem;
+
+//   @include phone();
+// }
+// ----------------------------------------------------------------
+// 
+// $breakpoints: (
+
+//   1: 300px,
+
+//   2: 600px,
+
+//   3: 900px
+
+// );
+
+// @mixin for-size-all {
+
+//   @for $i from 1 through 3 {
+
+//     @media (min-width: #{map-get($breakpoints, $i)}) {
+
+//       column-count: $i;
+
+//     }
+
+//   }
+
+// }
+
+// .header-title {
+
+//   font-size: 2rem;
+
+//   @include for-size-all();
+
+// }
+
+// -------------------------------------------------------------------
+$breakpoints: (
+
+  phone: 300px,
+
+  tablet: 600px,
+
+  desktop: 900px
+
+);
+
+@mixin for-size($device) {
+
+  @if map-has-key($breakpoints, $device) {
+
+    @media (min-width: #{map-get($breakpoints, $device)} ) {
+
+      @content;
+
+      &:before {
+
+        content: $device;
+
+      }
+
+    }
+
+  }
+
+}
+
+.header-title {
+
+  font-size: 2rem;
+
+  @include for-size("phone") {
+
+    column-count: 1;
+
+    color: orange;
+
+  }
+
+  @include for-size("tablet") {
+
+    column-count: 2;
+
+    color: yellow;
+
+  }
+
+  @include for-size("desktop") {
+
+    column-count: 3;
+
+    color: black;
+
+  }
+
+}
+@mixin triangel ( $width,$height,$borderL,$borderR,$borderB) {
+    
+        width: $width; 
+        height:$height; 
+        border-top:$borderL ;
+        border-bottom: $borderR,;
+        
+        border-left: $borderB;
+      
+}
+.arrow-up {
+   @include triangel(0,0 ,  40px solid transparent , 40px solid transparent , 40px solid #f00 );
+  }

@@ -1,0 +1,45 @@
+.header-title {
+  font-size: 2rem;
+}
+
+@media (min-width: 300px) {
+  .header-title {
+    -webkit-column-count: 1;
+            column-count: 1;
+    color: orange;
+  }
+  .header-title:before {
+    content: "phone";
+  }
+}
+
+@media (min-width: 600px) {
+  .header-title {
+    -webkit-column-count: 2;
+            column-count: 2;
+    color: yellow;
+  }
+  .header-title:before {
+    content: "tablet";
+  }
+}
+
+@media (min-width: 900px) {
+  .header-title {
+    -webkit-column-count: 3;
+            column-count: 3;
+    color: black;
+  }
+  .header-title:before {
+    content: "desktop";
+  }
+}
+
+.arrow-up {
+  width: 0;
+  height: 0;
+  border-top: 40px solid transparent;
+  border-bottom: 40px solid transparent;
+  border-left: 40px solid #f00;
+}
+/*# sourceMappingURL=midia.css.map */

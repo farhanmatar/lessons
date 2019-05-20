@@ -1,0 +1,24 @@
+a:link {
+  color: black;
+}
+
+a:visited {
+  color: blue;
+}
+
+a:hover {
+  color: green;
+}
+
+a:active {
+  color: red;
+}
+
+h1 {
+  background-color: orange;
+  font-size: 2em;
+  color: red;
+  text-align: center;
+  @in;
+}
+/*# sourceMappingURL=style.css.map */

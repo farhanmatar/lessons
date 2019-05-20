@@ -1,0 +1,57 @@
+// .arrow-up {
+//     width: 0;
+//     height: 0;
+//     border-left: 50px solid transparent;
+//     border-right: 50px solid transparent;
+//     border-top: 50px solid transparent;
+//     border-bottom: 50px solid transparent;
+//   }
+@mixin triangel($color, $direction) {
+  width: 0;
+  height: 0;
+  margin: 10px;
+  @if $direction == "up" {
+    border-left: 50px solid transparent;
+    border-right: 50px solid transparent;
+    // border-top: 50px solid transparent;
+    border-bottom: 50px solid $color;
+  } @else if $direction == "down" {
+    border-left: 50px solid transparent;
+    border-right: 50px solid transparent;
+    border-top: 50px solid $color;
+    // border-bottom: 50px solid transparent;
+  }
+}
+.arrow-up {
+  @include triangel(red, "up");
+}
+.arrow-down {
+  @include triangel(yellow, "down");
+}
+
+//   .arrow-down {
+//     width: 0;
+//     height: 0;
+//     border-left: 20px solid transparent;
+//     border-right: 20px solid transparent;
+
+//     border-top: 20px solid #f00;
+//   }
+
+//   .arrow-right {
+//     width: 0;
+//     height: 0;
+//     border-top: 60px solid transparent;
+//     border-bottom: 60px solid transparent;
+
+//     border-left: 60px solid green;
+//   }
+
+//   .arrow-left {
+//     width: 0;
+//     height: 0;
+//     border-top: 10px solid transparent;
+//     border-bottom: 10px solid transparent;
+
+//     border-right:10px solid blue;
+//   }
