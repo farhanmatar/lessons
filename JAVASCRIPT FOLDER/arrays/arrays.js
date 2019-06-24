@@ -104,16 +104,3 @@ months.splice(4, 1, 'May');
 // replaces 1 element at index 4
 console.log(months);
 // expected output: Array ['Jan', 'Feb', 'March', 'April', 'May']
-
-// / forEach loop for arrys */ 
-let cars=["bmw","Audi","mercedes","fiat"];
-for(let i=0; i<cars.length;i++){
-    document.write(cars[0]);
-}
-// /////////////
-// with forEach()
- cars.forEach(  function(blabla) { alert(blabla);  }    );
-
- let num=[1,2,3];
- num.forEach(  function(n) { n=n+10; alert(n);  }    );
- 
