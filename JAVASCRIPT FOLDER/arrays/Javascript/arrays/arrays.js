@@ -112,8 +112,43 @@ for(let i=0; i<cars.length;i++){
 }
 // /////////////
 // with forEach()
- cars.forEach(  function(blabla) { alert(blabla);  }    );
+//  cars.forEach(  function(blabla) { alert(blabla);  }    );
 
- let num=[1,2,3];
- num.forEach(  function(n) { n=n+10; alert(n);  }    );
+//  let num=[1,2,3];
+//  num.forEach(  function(n) { n=n+10; alert(n);  }    );
  
+// for(let i=0; i<num.length;i++){
+//     num[i]=num[i]+10;
+//     alert(num[i]);
+// }
+
+// let food = [ "apple","kebab","donner"];
+// food.forEach (myfood);
+// function myfood(foodname){
+//     alert(foodname);
+// }
+
+let weekdays=["mo","tu","we","th","fr","sa","so"];
+//             0  ,  1 , 2  , 3  ,  4 ,  5 ,  6 
+weekdays.forEach(printdays);
+
+function printdays(item,index)
+{
+    console.log(item + "    " + index );
+}
+
+function printArrDays (item,index,arr){
+    console.log(item);
+}
+weekdays.forEach(printArrDays);
+
+weekdays.forEach( function(item,index,arr){console.log("the day is " + item)});
+
+// change the array element by multi every element with 9 using forEach
+let numbers=[1,4,5,6,7,8,9];
+
+ 
+numbers.forEach(  function(item){   console.log(item*9); }   );
+
+let weeks=[22,33,44,55,66,77,88];
+weeks.forEach( function(item) { console.log (item-10); }  );
