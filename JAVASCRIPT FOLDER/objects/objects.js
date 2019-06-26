@@ -191,7 +191,7 @@ movies.forEach(function(film){
 
  for( let i=0;i<movies.length;i++){
      if(movies[i].hasWatched==true){
-         document.write("<div style='color:green;font-wright:bold;background-color:yellow;'>you watched","<br>"+movies[i].title
+         document.write("<div style='color:green;font-weight:bold;background-color:yellow;'>you watched","<br>"+movies[i].title
          + " has " + movies[i].rating
          + " star " + stars(movies[i].rating) + "<div><br><br>");
      }
