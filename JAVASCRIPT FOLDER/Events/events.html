@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width= , initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Hello we</h1>
+    <form method="POST" action="http://www.w3schools.com/" onsubmit="formSubmit()">
+        <label for="fullname">Enter your name</label>
+        <input type="text" name="fullname"onfocus ="myfunction(0)" 
+        onblur=" inputBlur(0)" onkeypress="inputKeyPress(1)">
+
+        <label for="email">enter your email</label>
+        <input type="email" name="email" onchange="inputChange(1)"
+         onselect="inputSelect(1)" onblur=" inputBlur(1)" onkeyup= "inputKeyUp(1)">
+
+         <label for="userpass"> write your pass</label>
+         <input type="password" name="userpass" >
+
+         <input type="submit" value="submit the data" >
+    </form>
+
+    <script src="events.js"></script>
+</body>
+</html>
