@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <p>Value in Degrees <input id="input"> </p>
+    <button onclick="ConvertDegRadians()">Convert</button>
+    <p id="output"></p>
+        
+   
+    <script>
+//function convertdegto radians number pi/180
+function ConvertDegRadians(){
+     let input = document.getElementById("input").value;
+     console.log(input);
+     // do input mathpi m/fa-rotate-180
+     document.getElementById("output").innerHTML=input*Math.PI/180;
+
+ console.log(output);
+} 
+    </script>
+
+</body>
+</html>
