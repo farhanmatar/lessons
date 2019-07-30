@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    
+    <script>
+       /*  class User{
+            constructor(username,ip){
+                this.username=username;
+                this.ip=ip;
+            }
+            sayHello(){
+                if(this.isRejected()){
+                    alert( "go to hell"  ) ;
+                }else{
+                    alert(`weöłcome${this.username}!`) 
+                }
+                
+            }
+            isRejected(){
+                if(this.ip=="127.2.2.2"){
+                    return true;
+                }
+            else {
+                return false
+              }  
+              
+            }
+        }
+        const u = new User("dci_user","127.1.3.1");
+        if(u.isRejected()){ alert("you are rejected");}
+        else {  u.sayHello(); }
+        
+        class admin extends User{}
+        //class owner extends Admin{} 
+
+
+        getCategory(){
+            document.write(`the admin ${this.username}moderates the Catagory${this.catagory}`)
+        }
+        blockUser(x){
+           alert(``)
+        }
+         */
+         class User {
+           constructor(username, ip) {
+               this.username = username;
+               this.ip = ip;
+               this.startTime = new Date();
+           }
+           getActivityTime(){
+               let currentTime = new Date();
+               let diff = currentTime.getTime() - this.startTime; 
+               // making varible to find the time on the concol
+
+               return diff/10000; // diff is the diffrent time function
+               // do soomthing with this StartTime
+           }
+           sayHello() {
+               if(this.isRejected()) {
+                   alert(`You are a bad guy, ${this.username}. See you!`)
+               } else {
+                   alert(`Welcome back ${this.username}!`)
+               }
+               // if (rejected == false) {
+               // alert
+               //} else {alert}
+           }
+           isRejected() {
+               if(this.ip == "127.2.2.2") {
+                   return true;
+               }
+               else {
+                   return false;
+               }
+           }
+       }
+       const u = new User("dci_user", "127.1.1.1");
+
+
+    //    /////////////////////////////////////////////////////////////////////////////////////////////
+       class Admin extends User {
+           constructor(username, ip, category) {
+               super(username, ip);
+               this.category = category;
+           }
+           getCategory() {
+               document.write(`The admin ${this.username} moderates the category ${this.category}`);
+           }
+           blockUser(x) {
+               //
+               alert(`The user ${x} is blocked`);
+           }
+       }
+       const a = new Admin("romal", "127.3.4.5", "Sportcars")
+       class Owner extends Admin {
+           constructor(username, ip, category, ownerSince){
+               super(username, ip, category);
+               this.ownerSince = ownerSince;
+           }
+           getOwnerName() {
+               document.write(`This web page was crated by ${this.username}`);
+           }
+       }
+       const o = new Owner("BillGates", "9.9.9.9", "All", 20);
+
+
+
+        </script>
+</body>
+</html>

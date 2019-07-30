@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Rectangle</title>
+</head>
+<body>
+    <div id="myrect"></div>
+    <script>
+    /* class Rectangle{
+        constructor(height,width,color){
+            this.height=height;
+            this.width=width;
+            this.color=color;
+            create(){
+            let motherDiv= document.getElementById("main");
+            let newDiv= document.createElement("div");
+            newDiv.style.height=this.height;
+            newDiv.style.width=this.width;
+            newDiv.style.backgroundColor=this.color;
+            newDiv.style.margin="10px";
+            newDiv.style.position="absoulot";
+            newDiv.style.top=getRandomArbitrary(0,1200)+"px";
+            newDiv.style.left=getRandomArbitrary(0,1200)+"px";
+            motherDiv.appendChild(newDiv);
+
+            }
+        }
+    const r1 =new Rectangle("20px","40px","green");
+    r1.create();
+    const r2 =new Rectangle("40px","80px","yellow");
+    r2.create();
+ 
+    for(i=0; 0<500;i++){
+        r = new Rectangle getRandomArbitrary(10,120)+ "px";
+    } */
+
+
+class Rectangle {
+           constructor(height, width, color,radius,margin) {
+               this.height = height;
+               this.width = width;
+               this.color = color;
+               this.radius=radius;
+               this.margin=margin;
+           }
+           create() {
+               let myrect = document.createElement("div");
+               let outDiv = document.getElementById("myrect");
+               outDiv.appendChild(myrect);
+               myrect.style.height=this.height;
+               myrect.style.width=this.width;
+               myrect.style.backgroundColor=this.color;
+               myrect.style.borderRadius=this.radius;
+               myrect.style.margin=this.margin;
+           }
+       }
+       const rect1 = new Rectangle("70px", "100px", "green","50%","20px  ");
+       rect1.create(); 
+      
+       const rect2 = new Rectangle("70px", "100px", "red","50px","");
+       rect2.create(); 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      
+    </script>
+</body>
+</html>
