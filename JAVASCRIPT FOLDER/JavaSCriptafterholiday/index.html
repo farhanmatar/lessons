@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+
+
+
+    <ul id="parent"></ul>
+
+
+<script>
+
+/* using the get as a function with return */
+
+// class  Rectangel{
+//    constructor(height,width){
+//       this.h=height;
+//       this.w=width;
+//    }
+//  get area(){
+//     return this.w * this.h
+//  }
+// }
+// let myRectangel=new Rectangel(9, 5);
+// console.log(myRectangel.area);
+
+/* ------------------------------------------------------- */
+
+
+class BaseItem{
+  constructor(text){
+     this.text=text;
+  }
+  draw(){
+     let li =document.createElement("li");
+     let textnode=document.createTextNode(this.text);/* we are appending the text from the constructor and the we will define it at the end */
+     li.appendChild(textnode);
+     document.getElementById("parent").appendChild(li);
+
+  }
+}
+
+let item1 =new BaseItem("this is the item I");
+item1.draw();
+
+
+</script>
+</body>
+</html>
