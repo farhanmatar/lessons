@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Code With Mansour</title>
+</head>
+<body>
+<form action="">
+  <label for=""> name </label>
+  <input type="input" id="name">
+  <label for=""> age </label>
+  <input type="input" id="age">
+  <label for=""> job </label>
+  <input type="input" id="job">
+  <label for=""> city </label>
+  <input type="input" id="city">
+  <input type="button" id="save"value="save">
+  <input type="button" id="delbtn" value="delete all Local storage">
+</form>
+<script>
+   let nameIn = document.getElementById('name');
+   let ageIn =  document.getElementById('age');
+   let jobIn =  document.getElementById('job');
+   let cityIn = document.getElementById('city');
+   let save = document.getElementById('save');
+   let delbtn=document.getElementById("delbtn")
+   
+  let personObj ={};
+  let arrPerson=[];
+
+   save.addEventListener('click',function(){
+   personObj.name  = nameIn.value;
+   personObj.age   = ageIn.value;
+   personObj.job   = jobIn.value;
+   personObj.city  = cityIn.value;
+   /* to print the data in the Local Storage */
+   let str=JSON.stringify(personObj);
+   arrPerson.push(str);
+   localStorage.setItem("arrPerson",arrPerson);
+  });
+  /* to delete all the locla storage data and i the cosnole */
+  delbtn.addEventListener("click",function(){
+ localStorage.clear();
+ console.clear()
+ });
+</script>
+</body>
+</html>

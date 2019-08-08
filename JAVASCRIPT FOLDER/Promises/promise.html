@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Promises</title>
+  </head>
+  <body>
+    <script>
+          var isMomHappy = false;
+      // promose
+      var willGetNewPhone = new Promise (
+        function(resolve,reject){
+
+       if (isMomHappy){
+          var phone = {
+
+          brand: "apple",
+          color: "black"
+          }
+          resolve(phone);//fullfilled
+        }else{
+        var reason = new Error ("MOM is no happy ");
+        reject(reason);//reject
+          }
+         }
+      );
+      //call our promise
+      var askMom = function() {
+        willGetNewPhone
+        .then(function (phone) {
+
+          // yay,you got a new phone
+
+          console.log(phone);
+        })
+        .catch(function(error){
+          console.log(error.message); //mom is not happy
+
+         })
+      }
+      askMom();
+// ////////////////////////////////////////////////////////////////////////////////////////////
+      var delay = 2000;
+Promise
+var delayPromise = new Promise(
+    function(resolve, reject){
+        if (delay < 1000){
+            var less = "less than 1000";
+            setInterval(function(){
+                resolve(less);
+            },delay);
+        }
+        else{
+            var out = new Error('time out');
+            setInterval(function(){
+                reject(out);
+            },delay);
+        }
+    }
+);
+//call our promise
+var checkTime = function(){
+    delayPromise
+    .then(function(fullfilled){
+        console.log(fullfilled);
+    })
+    .catch(function(error){
+        console.error(error.message);
+    })
+}
+checkTime();
+// ///////////////////////////////////////////////////////////////////////
+
+var myDelay = 4000; //ms
+       // Promise
+       var willIGetDBResponse = new Promise(
+           function (resolve, reject) {
+               if (myDelay < 3000) {
+                   var response = {
+                       username: "johnsmith",
+                       name: "John",
+                       surname: "Smith"
+                   }
+                   setTimeout(function() {
+                       resolve(response); // fulfilled
+                   }, myDelay);
+               } else {
+                   var error = new Error("it took too long");
+                   setTimeout(function() {
+                       reject(error); // rejected
+                   }, 3000);
+               }
+           }
+       );
+       // call our promise
+       var sendRequest = function () {
+           willIGetDBResponse
+               .then(function (response) {
+                   console.log(response);
+               })
+               .catch(function (error) {
+                   console.error(error.message);
+               })
+       }
+       sendRequest();
+
+    </script>
+    <script>
+
+//basic
+var patt = /dci/;
+var str = "i like big butt and i dci can not lie,dci,dci,dci";
+//modifiers g, i
+str = "i like big butt and i dci can not lie,dci,dci,dci";
+patt = /dci/g;
+//  [dci,dci,dci,dci ]
+
+//modifiers g, i
+str = "i like big , Dci, dci,dci,dci";
+patt = /dci/g;
+
+
+
+str = "test_a test_b test_c test_m"
+patt = /test_[abc]/g
+patt = /test_[a-c]/g //same
+// [ "test_a", "test_b", "test_c" ]
+
+str = "test_a test_b test_c test_m"
+patt = /test_[^abc]/g
+patt = /test_[^a-c]/g//same
+// [ "test_m" ]
+
+//[0-9] Finde any charachter between the brackets (any digital)
+str = "test_0 test_2 test_3 test_m"
+patt = /test_[023]/g
+
+str = "test_0 test_2 test_3 test_7"
+patt = /test_[^023]/g
+patt = /test_[^0-6]/g
+
+str = " colour color"
+patt = /col(o|ou)r/g
+//[ "colour", "color" ]
+
+//Meracharachters
+//. - dot . any character
+str = "car car? cars car2"
+patt = /car./g
+// [ "car ", "car?", "cars", "car2" ]
+
+str = "car456 carRr car. car"
+patt = /car../g
+// [ "car45", "carRr", "car. " ]
+
+//\W find a word character 
+str = "google.com facebook.com romal.com romal.it"
+patt = /\w+\.com/g
+
+//\W find a NON-word character 
+str = "google.com google.it google123§%$&.com googleisNOTthesubeER.com "
+patt = /\w+\.com/g
+
+
+//quantifiers
+// n+ Matches any starting that contains at least one n 
+str = "n l nn ll nnn lll nnn"
+patt = /n+/g
+//[ "l", "ll", "lll" ]
+//[ "n", "nn", "nnn", "nnn" ]
+
+str = "3 July, 3rd Augest"
+patt = /3(rd)?/g
+//[ "3", "3rd" ]
+
+//n(2,3)Matches any string that contains a sequwnce of 2 to 3 n's
+
+str = "n l nn ll nnn lll nnn"
+patt = /l{2,3}/g
+// [ "ll", "lll" ]
+
+str = "n l nn ll nnn lll nnn"
+patt = /l{2,4}/g
+//[ "ll", "lll" ]
+
+str = "n l nn ll nnn lll nnn"
+patt = /l{2}/g
+//[ "ll", "lll" ]
+
+//matches any string with n at the end of it 
+str = "google.com google.it google.de"
+patt = /^google\.w+/g
+
+str = "google.com google.it google123§%$&.com googleisNOTthesubeER.com "
+patt = /\w+\.com/g
+
+
+
+//out
+var arr = str.match(patt);
+console.log(arr);
+    </script>
+  </body>
+</html>
