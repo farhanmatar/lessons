@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Recursions</title>
+</head>
+
+<body>
+        <script>
+            var prod =0;
+                function factRec(n) {
+                    // if (n == 1) return 1; 
+                    if (n >= 1) {
+                        prod *=n;
+                        console.log(prod);
+                        return factRec(n - 1);
+                    }
+                    return prod;
+                }
+                var nMax = 200;
+                console.time('factRec');
+                console.log('factRec');
+                console.time('sumToRec');
+
+                function sumTo(n) {
+                    while (n >= 0) {
+                        console.log(n);
+                        n--;
+                    }
+                }
+                // countdown(10);
+            </script>
+        
+        
+        
+        
+
+</html> 

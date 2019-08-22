@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Recursions</title>
+</head>
+
+<body>
+        <script>
+            var sum =0;
+                function sumToRec(n) {
+                    if (n >= 0) {
+                        sum +=n;
+                        console.log(sum);
+                        return sumToRec(n - 1);
+                    }
+                    return sum;
+                }
+                var nMax = 200;
+                console.time('sumToRec');
+                sumToRec(nMax);
+                console.time('sumToRec');
+
+                function sumTo(n) {
+                    while (n >= 0) {
+                        console.log(n);
+                        n--;
+                    }
+                }
+                // countdown(10);
+            </script>
+        
+        
+        
+        
+
+</html> 
