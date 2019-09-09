@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <style>
+        div{ 
+            text-align: center;
+            margin: auto 0;
+            padding: 20px;
+            font-weight: bolder;
+            background: yellow;
+            
+        } 
+        li{
+            border: soild 4px;
+            color:brown;
+            border-radius: 40px;
+        }
+      div:hover,h1:hover{
+            margin: 16px 16px;
+            background: rgba(120, 199, 88, 0.7)
+        }
+        h1{
+            border: solid 4px blueviolet;
+            text-align: center;
+            background: rgba(174, 190, 79, 0.7);
+            border-radius: 40px;
+            font-family:Verdana, Geneva, Tahoma, sans-serif;
+        }
+       
+
+    </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <script src="handlebars-v4.2.0.js"></script>
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"
+         integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+         crossorigin="anonymous"></script>
+    <title>Document</title>
+</head>
+<body> 
+        <script id="hb-object" type="text/x-handlebars-template">
+           <div>
+               <h1>{{title}} </h1>
+               {{#each text1}}
+                   <h2> {{this.author.name}} </h2>
+                   <img src="https://picsum.photos/200/300/?blur=2" alt="">
+                    
+                       <div class="this text">
+                           {{this.text}}
+                            {{this}} <hr> 
+                    <div> 
+                         {{/each}}  
+                     </div>
+                  
+              
+           </div>
+
+
+
+       <!--      <h1> My list {{name}}</h1>
+          <ul class="list-group">
+                {{#each mylist}}
+                <li  class="list-group-item">{{this}}</li>
+                {{/each}}
+            </ul>
+          <p>
+              made by {{auther}}
+          </p> -->
+        </script>
+     
+     <script>
+       
+   //HB:html {"name": "Bill Gates", "occupation": "ms CEO"};
+          var context={"title":"Vanilla Blog",
+        "author": {
+            "name":"Boris"
+        },
+        "text1":["Hi there! It's my first post","new post","one new post","imageId","123"],
+      
+        };   
+         //jQuery Retrieve the tamplate data from the html
+         var template = $('#hb-object').html(); 
+
+          //complie the template
+         var templateScript = Handlebars.compile(template);
+
+           //now define your name and your occupation
+         var html = templateScript(context);
+         
+       
+
+        
+     
+        
+         
+
+         //insert the HTML code into the page 
+         $(document.body).append(html);
+     </script>
+</body>
+</html>
+
+    

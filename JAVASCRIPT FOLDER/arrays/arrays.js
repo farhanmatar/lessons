@@ -32,6 +32,8 @@ let colors=["orange","pink","green"];
 
 console.log(colors);
 colors.push("blue");
+colors.push("orange");
+colors.pop();
 console.log(colors);
 // ////////////////////////
 // the arrays will be["orange","pink","green"];
@@ -100,7 +102,7 @@ months.splice(1, 0, 'Feb');
 console.log(months);
 // expected output: Array ['Jan', 'Feb', 'March', 'April', 'June']
 
-months.splice(4, 1, 'May');
+months.splice(4,2 ,'aug', 'May')
 // replaces 1 element at index 4
 console.log(months);
-// expected output: Array ['Jan', 'Feb', 'March', 'April', 'May']
+// expected output: Array ['Jan', 'Feb', 'March', 'April', 'May'] 
