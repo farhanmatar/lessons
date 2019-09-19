@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <style>
+      div {
+          
+        height: 400px;
+        width: 400px;
+        border: solid 2px black;
+        display: inline-block;
+        margin: 0 auto;
+        /* position:absloute; */
+      }
+      #regForm,
+      #addressInfoForm,
+      #anotherInfoForm {
+        background-color: #ffffff;
+        margin: 100px auto;
+        font-family: Raleway;
+        padding: 40px;
+        width: 70%;
+        min-width: 300px;
+      }
+      button {
+        background-color: #4caf50;
+        color: #ffffff;
+        border: none;
+        padding: 10px 20px;
+        font-size: 17px;
+        font-family: Raleway;
+        cursor: pointer;
+      }
+
+      button:hover {
+        opacity: 0.8;
+      }
+
+      #prevBtn {
+        background-color: #bbbbbb;
+      }
+    </style>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Document</title>
+  </head>
+  <body> 
+     
+    <div id="personalInfo" >
+        <h1> personal info 1</h1>
+      <form id="regForm" action="">
+        <label  for="First_Name">First Name</label>
+        <input type="text" id="First_Name"/><br>
+        <label for="Last_Name">Last Name</label>
+        <input type="text" id="Last_Name"  /><br>
+        <label for="Date_of_birth">Date of birth</label>
+        <input type="date" id="Date_of_birth" /> <br>
+        <input id="btn" type="button" value="next">
+       
+      </form>
+    </div>  
+   
+    <div id="addressInfo" style="display: none;">
+           <h1> personal info 2</h1>
+      <form id="addressInfoForm" action="">
+        <label id="Nationality" for="">Nationality</label> <br />
+        <input type="text" /> <br>
+        <label id="country" for="">country</label> <br />
+        <input type="text" /> <br>
+        <label id="city" for="">City</label> <br />
+        <input type="text" /> <br />
+        <input id="prev" type="button" value="preview">
+        <input id="btn1" type="button" value="next">
+
+        
+    
+        
+      </form>
+    </div>
+   
+    <div id="anotherInfo" style="display: none;">
+         <h1>user info</h1>
+      <form id="anotherInfoForm" action="">
+        <label id="username" for="">username</label> <br />
+        <input type="text" /> <br>
+        <label id="password" for="">password</label> <br />
+        <input type="text" /> <br />
+        <input id="prev2" type="button" value="preview">
+        <input id="btn2" type="button" value="next">
+      
+      </form>
+    </div>
+<div id="showDiv" style="display: none;"></div>
+    <script src="main.js"></script>
+  </body>
+</html>
