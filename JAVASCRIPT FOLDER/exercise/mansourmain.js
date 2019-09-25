@@ -115,5 +115,20 @@ function showData(){
     let lname = document.getElementsByName("lastName")[0].value;
     let bData = document.getElementsByName("birthDate")[0].value;
     let nationality = document.getElementsByName("nationality")[0].value;
+    let address = document.getElementsByName("address")[0].value;
+    let hauseNum = document.getElementsByName("hauseNumber")[0].value;
+    let zipeCode = document.getElementsByName("zipeCode")[0].value;
+    let uName = document.getElementsByName("userName")[0].value;
+    let psw = document.getElementsByName("password")[0].value;
+    let imageFile = document.getElementsByName('imageFile')[0].value;
 
+    document.getElementById("nameLable").innerText = fName + " " + lName;
+    document.getElementById("birthDateLable").innerText = bData;
+    document.getElementById("nationalityLable").innerText = nationality;
+    document.getElementById("addressLable").innerText = address + " " +hauseNum + " " +zipeCode ;
+    document.getElementById("nameLable").innerText = uName;
+    document.getElementById("passwordLable").innerText = psw;
+    document.getElementById("photoLable").src = imageFile.replace("c:\\fackpath\\","./images/");
+    
+    
 }
