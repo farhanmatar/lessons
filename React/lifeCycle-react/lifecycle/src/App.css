@@ -1,0 +1,28 @@
+.App {
+  text-align: center;
+}
+
+.wrapper{
+  width: 60%;
+  margin:0px;
+  border:2px solid #888;
+  border-radius: 15px;
+  padding: 25;
+}
+.list{
+  list-style-type: none;
+  
+}
+.list li{
+  padding: 10px 20px;
+  background: yellowgreen;
+  border: 1px solid red;
+  border-radius: 5px;
+  font-weight: bold;
+  margin: 1px;
+  
+
+
+}
+
+

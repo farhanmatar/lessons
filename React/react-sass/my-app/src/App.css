@@ -1,0 +1,9 @@
+.App {
+  text-align: center;
+}
+
+.containerClass{
+  background: url("blue.jpeg");
+  height: 100vh;
+  background-size: cover;
+}
