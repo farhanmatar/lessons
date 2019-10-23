@@ -8,6 +8,7 @@
   border:2px solid #888;
   border-radius: 15px;
   padding: 25;
+  margin: 0 auto;
 }
 .list{
   list-style-type: none;
@@ -20,8 +21,17 @@
   border-radius: 5px;
   font-weight: bold;
   margin: 1px;
-  
-
+}
+.btn{
+  padding: 10px 20px;
+  background: #faa7ce;
+  margin: 10px auto;
+  font-size: 20px;
+  display: block;
+  border: 1px solid darkred;
+  border-radius: 15px;
+  cursor: pointer;
+  color: white;
 
 }
 
