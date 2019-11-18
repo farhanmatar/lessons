@@ -1,0 +1,54 @@
+body{
+  background-color:yellow;
+}
+h1{
+  text-align: center;
+}
+ul{
+  list-style-type: none;
+  text-align: center;
+
+}
+li{
+  display: inline-block;
+  
+}
+li a{
+  color:white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  background: rgb(8, 37, 65);
+  border-radius: 50%;
+}
+li a:hover{
+  background: rgb(172, 30, 30);
+  
+}
+.inputname{
+  margin: 20px;
+}
+.wrap{
+  border: 1px solid black;
+  height: 400px;
+  width: 50%;
+  margin: 0 auto;
+  padding: 10px;
+  text-align: center;
+  background-color: lightseagreen
+
+
+}
+.formclass{
+  text-align: center;
+}
+
+.Hobbies{
+  height: 50%;
+  width: 50%;
+  padding: 20px;
+  margin:0 auto;
+  background-color: lightseagreen;
+  
+}
+

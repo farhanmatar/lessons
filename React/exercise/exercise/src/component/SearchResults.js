@@ -11,16 +11,43 @@ export default class SearchResults extends Component {
                     {id:4,name:' Ahmad',email:'ahmad@gmail.com'},
                     {id:5,name:' Dan',email:'danman@gmail.com'}
 
-           ]     
+           ], 
+             lastSearchTerm:''
         }
+        
     }
+    componentWillUnmount(){
+        console.log("The SearchResults-component will unmount")
+    }
+    componentDidMount(){
+        fetch("https://jsonplaceholder.typicode.com/users")
+        .then(res => res.json())
+        .then(data => this.setState({ data }));
+        console.log("The SearchResult-component has mounted.")
+    }
+    shouldComponentUpdate(nextProps){ 
+        if(this.state.lastSearchTerm !==nextProps.searchFor){
+         return true;
+        }else {
+            return false;
+        }
+      }
+
+      componentDidUpdate(){
+          this.setState({
+              lastSearchTerm:this.props.searchFor
+          })
+      }
     
     render () {
-
-      let result = this.state.users.filter((item)=>{
-      return item.name.includes(this.props.searchFor)        
+console.log('Is render')  
+  let result = this.state.users.filter((item)=>{
+      return item.name.toLowerCase().includes(this.props.searchFor.toLowerCase())        
       })
-      
+
+     
+    
+
       let tableBody = result.map((users) =>{
             return(
                 <User id={users.id} name={users.name} email={users.email}/>
