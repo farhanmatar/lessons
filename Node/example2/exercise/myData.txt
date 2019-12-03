@@ -1,0 +1,9 @@
+ dog 
+ cat
+ horse
+ book 
+ fire
+ air 
+ light 
+ dog 
+ dog 

@@ -1,15 +1,12 @@
 {
-  "name": "node-js",
+  "name": "intro-2",
   "version": "1.0.0",
-  "description": " introdaction nord.js",
+  "description": "",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "Farhanmm",
   "license": "ISC",
-  "dependencies": {
-    "jquery": "^3.4.1",
-    "uuid": "^3.3.3"
-  }
+  "dependencies": {}
 }
