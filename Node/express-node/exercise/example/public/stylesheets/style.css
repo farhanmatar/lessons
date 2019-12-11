@@ -1,0 +1,28 @@
+body {
+  padding: 50px;
+  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+  color: red;
+  background-color:yellowgreen;
+}
+
+a {
+  color: rgb(17, 0, 255);
+}
+h1{
+  text-align: center;
+  background-color: aqua;
+  border-radius: 20%;
+  height: 200px;
+  width: 400px;
+  color: brown;
+}
+h2{
+  
+    text-align: center;
+    background-color: lightseagreen;
+    border-radius: 10%;
+    height: 400px;
+    width: 800px;
+    color: brown;
+    left: 20px;;
+}

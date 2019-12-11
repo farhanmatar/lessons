@@ -1,0 +1,95 @@
+{
+  "records": [
+    {
+      "id": 0,
+      "title": "Bose »QuietComfort QC 35 II«",
+      "price": "259,00 EUR"
+    },
+    {
+      "id": 1,
+      "title": "Sony »WH-1000XM3« Over-Ear-Kopfhörer",
+      "price": "284,00 EUR"
+    },
+    {
+      "id": 6,
+      "title": "newtitle",
+      "price": "100.00"
+    },
+    {
+      "id": 7,
+      "title": "newtitle",
+      "price": "100.00"
+    },
+    {
+      "id": 8,
+      "title": "newtitle",
+      "price": "100.00"
+    },
+    {
+      "id": 9,
+      "title": "newtitle",
+      "price": "100.00"
+    },
+    {
+      "id": 10,
+      "title": "newtitle",
+      "price": "100.00"
+    },
+    {
+      "id": 11,
+      "title": "Happy Socks Socken (Box 4 Paar) mit verschiedenen Mustern in der Box",
+      "price": "€ 19,99"
+    },
+    {
+      "id": 12,
+      "title": "Happy Socks Socken (Box 4 Paar) mit verschiedenen Mustern in der Box",
+      "price": "€ 19,99"
+    },
+    {
+      "id": 13,
+      "title": "Sony Xperia L3 Dual SIM Smartphone (14,5 cm/5,7 Zoll, 32 GB Speicherplatz, 13 MP Kamera)",
+      "price": "€ 169,99"
+    },
+    {
+      "id": 14,
+      "title": "Sony Xperia L3 Dual SIM Smartphone (14,5 cm/5,7 Zoll, 32 GB Speicherplatz, 13 MP Kamera)",
+      "price": "€ 169,99"
+    },
+    {
+      "id": 12,
+      "title": "ff",
+      "price": "f"
+    },
+    {
+      "id": 13,
+      "title": "ff",
+      "price": "f"
+    },
+    {
+      "id": 14,
+      "title": "ff",
+      "price": "f"
+    },
+    {
+      "id": 15,
+      "title": "newtitle",
+      "price": "100"
+    },
+    {
+      "id": 16,
+      "title": "Bose »QuietComfort QC 35 II«\"",
+      "price": "100"
+    },
+    {
+      "id": 17,
+      "title": "Bose »QuietComfort QC 35 II«\"",
+      "price": "100"
+    },
+    {
+      "id": 18,
+      "title": "Bose »QuietComfort QC 35 II«\"",
+      "price": "100"
+    }
+  ],
+  "count": 12
+}

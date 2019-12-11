@@ -1,0 +1,31 @@
+<html>
+
+<head>
+  <title>Express</title>
+  <link rel="stylesheet" href="/stylesheets/style.css">
+</head>
+
+<body>
+  <h1>Express</h1>
+  <p>Welcome to Express</p>
+
+  <form action="/api/post" method="post">
+  <th> Id: <input type="number" name="id"><br></th> 
+    Fname: <input type="text" name="fname"><br>
+    Lname: <input type="text" name="lname"><br>
+    <input type="submit" value="Submit">
+  </form>
+  <form action="/api/delete" method="post">
+    ID <input type="text" name="id"><br>
+    <input type="submit" value="delete" name="delete">
+   </form>
+
+   <table>
+     <thead id="thead"> </thead>
+     <tbody id="tbody"> </tbody>
+   </table>
+
+<script src="javascripts/test.js"></script>
+
+</body>
+</html>
