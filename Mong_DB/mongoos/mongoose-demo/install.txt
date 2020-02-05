@@ -1,0 +1,2 @@
+install the modules : npx express-generator  --no-view
+

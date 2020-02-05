@@ -1,0 +1,6 @@
+first :npm init -y
+
+then install mongoose modules : npm install mongoose
+
+
+then create a javascript file like getting_started.js thren continue the job :)

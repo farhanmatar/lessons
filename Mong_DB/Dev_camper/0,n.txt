@@ -1,0 +1,5 @@
+npm install
+npm init -y
+npm i express dotenv
+
+to get more info about  it visit this site :  https://medium.com/the-node-js-collection/making-your-node-js-work-everywhere-with-environment-variables-2da8cdf6e786
