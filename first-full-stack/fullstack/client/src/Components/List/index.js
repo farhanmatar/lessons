@@ -1,6 +1,7 @@
 import React, { Component } from 'react'
 import apis from '../../api'
 import Table from '../Table'
+
 export default class List extends Component {
     constructor(props) {
         super(props)
@@ -24,7 +25,7 @@ export default class List extends Component {
         })
         
     }
-    handleloadData = async () =>{
+    handleLoadData = async () =>{
         await apis.getMovieList().then(response=>{
             console.log(response.data)
 
@@ -36,12 +37,10 @@ export default class List extends Component {
         
     }
     
-    handleDelete = async(e)=>{
-        let id = e.target.id
-
-        await apis.deleteMovie(id).then(response=>{
-            this.handleloadData()
-
+    handleDelete = async (e) =>{
+        let config = {data:{id:e.target.id}}
+        await apis.deleteMovie(config).then(response=>{
+            this.handleLoadData()
         })
     }
 

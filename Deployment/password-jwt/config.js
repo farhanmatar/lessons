@@ -6,14 +6,14 @@ const devConfig = {
   db: "mongodb://localhost:27017/password-login",
   jwt_key: "iamaverysecretkey",
   port: 3000,
-  email: process.env.MY_EMAIL,
-  password: process.env.MY_PASS
+  email: 'my_email',
+  password:'my_pass'
 };
 
 const prodConfig = {
   db: process.env.MONGO_URI,
   jwt_key: process.env.JWT_SECRET,
-  port: 3000,
+  port:process.env.PORT,
   email: process.env.MY_EMAIL,
   email_pass: process.env.MY_PASS
 };

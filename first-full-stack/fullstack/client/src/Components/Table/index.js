@@ -15,13 +15,13 @@ export default function Table(props) {
         return <tr key={item['_id']}>
                        {temp_data}
                        <td>
-                           <botton id={item['_id']}
+                           <button id={item['_id']}
                            className="btn btn-danger"
                            onClick={props.delete}
                            >
                            Delete
 
-                           </botton>
+                           </button>
                        </td>
         </tr>
     })

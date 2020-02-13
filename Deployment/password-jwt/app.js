@@ -12,9 +12,11 @@ const path = require('path')
 
 
 
+
 // load env variables 
 dotenv.config({path : './.env'});
 const env = require("./config.js");
+
 
 // passport config 
 require('./config/passport')(passport)
