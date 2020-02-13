@@ -5,10 +5,6 @@ npm i axios react-router-dom bootstrap  --save
 rm -rf .git/
 
 
-
-
-
-
 -------------------------------------------------------------
 for creating project
 1- installing this 
